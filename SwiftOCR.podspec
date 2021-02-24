@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "13.0"
+  s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.15"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/garnele007/SwiftOCR.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/saeedCodium/SwiftOCR.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,7 +130,7 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   # s.requires_arc = true
-
+  s.dependency 'GPUImage'
   s.swift_versions = ['5.1', '5.2']
   
 
